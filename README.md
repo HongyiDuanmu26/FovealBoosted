@@ -8,7 +8,7 @@ rootdir
 
   |
 
-  --foveal1/ *.mat containing foveal blurred images.
+  --foveal/ *.mat containing foveal blurred images.
 
   --cells/ *.mat conatining nuclei-level masks.
 
