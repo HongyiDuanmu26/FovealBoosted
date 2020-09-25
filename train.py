@@ -36,7 +36,7 @@ from glob import glob
 
 def load_imgphi(path,pid):
 
-    files=glob(path+'foveat1/'+pid+'/*.mat')
+    files=glob(path+'foveal/'+pid+'/*.mat')
     files.sort()
     numimage=len(files)
     images1=np.zeros((numimage,512,512,3))
@@ -44,7 +44,7 @@ def load_imgphi(path,pid):
     phi=np.zeros((numimage,512,512,1))
     for i in range(numimage):
         j=i+1
-        filename1=path+'foveat1/'+pid+'/'+pid+'_{:0>3}.mat'.format(j)
+        filename1=path+'foveal/'+pid+'/'+pid+'_{:0>3}.mat'.format(j)
         
         img=sio.loadmat(filename1)['vol']
         img=cv2.resize(img,(512,512),interpolation=cv2.INTER_CUBIC)
@@ -96,9 +96,8 @@ def cnncheck():
     data_augmentation = True
 
     trainable=True
-    phipath='./Phi_cells/'
     imagepath='./TCGA/'
-    ids=['5270_01_1','5270_02_2','5275_01_3','5275_02_4','5847_01_1','5847_02_2','8165_01_3','A4MU_01_4','A4MU_02_1']
+    ids=['5270_01_1']
     i=0
     for id_i in ids:
         i=i+1
