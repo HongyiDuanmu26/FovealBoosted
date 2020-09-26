@@ -6,7 +6,7 @@ make_foveal.py is for foveal blurred image generation.
 unet.py is the file of unet model description.
 train.py is the main entrance of training of deep learning system.
 
-rootdir
+	rootdir
 
 		--foveal/ *.mat containing foveal blurred images.
 
