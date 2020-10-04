@@ -8,8 +8,10 @@ train.py is the main entrance of training of deep learning system.
 
 First Header | Second Header
 ------------ | -------------
-Content from cell 1 | Content from cell 2
-Content in the first column | Content in the second column
+make_foveal.py | foveal blurred image generation
+unet.py | unet model definition
+test.py | main entrance of test of deep learning system
+train.py | main entrance of training of deep learning system
 
 	rootdir
 
