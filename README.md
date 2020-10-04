@@ -6,7 +6,10 @@ make_foveal.py is for foveal blurred image generation.
 unet.py is the file of unet model description.
 train.py is the main entrance of training of deep learning system.
 
-| Tables | Are | Cool | | ——————- |:——————-:| ——-:| | col 3 is | right-aligned | $1600 | | col 2 is | centered | $12 | | zebra stripes | are neat | $1 |
+First Header | Second Header
+------------ | -------------
+Content from cell 1 | Content from cell 2
+Content in the first column | Content in the second column
 
 	rootdir
 
